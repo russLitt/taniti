@@ -1,3 +1,12 @@
+.padding-top-80{
+    padding-top: 80px;
+}
+
 .padding-bottom-40 {
     padding-bottom: 40px;
+}
+
+.img-size {
+    height: 300px;
+    width: 500px;
 }
