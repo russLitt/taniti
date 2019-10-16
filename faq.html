@@ -10,6 +10,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript">
+
+        function postQuestion() {
+            
+            var questions = [];
+            
+            var question = document.getElementById("question");
+            var questionOutput = document.getElementById("questionOutput");
+            var postQuestion = question.value;
+            questionOutput.value = "Question: " + postQuestion
+        } 
+
+    </script>
 </head>
 
 <body>
@@ -93,12 +107,14 @@
         <div class="row padding-bottom-40" style="padding-top: 40px">
             <h5>Ask New Question</h5>
             <div class="input-group mb-3">
-                <input type="text" class="form-control">
+                <input type="text" id="question" class="form-control">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Ask Question</button>
+                    <button class="btn btn-outline-secondary" type="button" value="click me" onclick="postQuestion()"
+                        id="button-addon2">Ask Question</button>
                 </div>
             </div>
         </div>
+        <input type="text" id="questionOutput" class="padding-bottom-40" style="width: 100%; border-style: none;" />
     </div>
 
     <footer class="text-center" style="border: 1px solid black">
