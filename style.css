@@ -13,6 +13,13 @@
     padding: 10px;
 }
 
+.grid-container-2-col {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
 .grid-container-news {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -36,6 +43,14 @@
     background-color: rgba(255, 255, 255, 0.8);
     padding: 0px;
     font-size: 16px;
+    text-align: center;
+    /* width: 360px; */
+}
+
+.grid-item-text {
+    margin-left: 200px;
+    font-size: 16px;
+    width: 340px;
     text-align: center;
 }
 
@@ -110,6 +125,17 @@ li a:hover:not(.active) {
     text-align: center;
 }
 
+.btn-primary {
+    background-color: cornflowerblue;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+}
+
 
 /* Dropdown menu */
 
@@ -174,6 +200,6 @@ li a:hover:not(.active) {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn .btn-primary {
     background-color: #3e8e41;
 }
