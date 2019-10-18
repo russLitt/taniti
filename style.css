@@ -1,4 +1,26 @@
-ul {
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ffffff;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.ul-nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,7 +28,7 @@ ul {
     background-color: #333;
 }
 
-li {
+.li-nav {
     float: left;
 }
 
@@ -37,4 +59,13 @@ li a:hover:not(.active) {
 .img-size {
     height: 300px;
     width: 500px;
+}
+
+.img-size-2 {
+    height: 200px;
+    width: 300px;
+}
+
+.text-center {
+    text-align: center;
 }
