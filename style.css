@@ -20,6 +20,13 @@
     padding: 10px;
 }
 
+.grid-container-3-col {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
 .grid-container-news {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -136,9 +143,12 @@ li a:hover:not(.active) {
     height: 40px;
 }
 
+.btn-primary:hover {
+    background-color: #4CAF50;
+    color: white;
+}
 
 /* Dropdown menu */
-
 
 /* Dropdown Content (Hidden by Default) */
 
@@ -150,7 +160,6 @@ li a:hover:not(.active) {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-
 
 /* Style The Dropdown Button */
 
@@ -165,14 +174,12 @@ li a:hover:not(.active) {
     height: 40px;
 }
 
-
 /* The container <div> - needed to position the dropdown content */
 
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 
 /* Links inside the dropdown */
 
@@ -183,20 +190,17 @@ li a:hover:not(.active) {
     display: block;
 }
 
-
 /* Change color of dropdown links on hover */
 
 .dropdown-content a:hover {
     background-color: #f1f1f1
 }
 
-
 /* Show the dropdown menu on hover */
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 
